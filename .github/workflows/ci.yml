@@ -39,4 +39,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: bot
+          user_email: bot@email.com
+          commit_message: build
           publish_dir: docs/.vitepress/dist
