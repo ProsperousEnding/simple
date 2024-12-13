@@ -28,6 +28,7 @@ const vitePressOptions = {
         socialLinks: [
             {icon: 'github', link: 'https://github.com/ProsperousEnding'}
         ],
+        base:'/simple/'
 
     },
 
