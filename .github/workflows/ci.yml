@@ -42,4 +42,5 @@ jobs:
           user_name: bot
           user_email: bot@email.com
           commit_message: build
-          publish_dir: docs/.vitepress/dist
+          publish_dir: .vitepress/dist
+          publish_branch: gh-pages
