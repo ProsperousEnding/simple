@@ -1,0 +1,64 @@
+{
+  "hash": "21612f88",
+  "configHash": "49935a7f",
+  "lockfileHash": "6faa2f8a",
+  "browserHash": "638450ba",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.5.13/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "060c18ea",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/.pnpm/@vue+devtools-api@7.6.8/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "efdd0a16",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../node_modules/.pnpm/@vueuse+core@11.3.0_vue@3.5.13/node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "134cdecb",
+      "needsInterop": false
+    },
+    "oh-my-live2d": {
+      "src": "../../../node_modules/.pnpm/oh-my-live2d@0.19.3/node_modules/oh-my-live2d/dist/index.js",
+      "file": "oh-my-live2d.js",
+      "fileHash": "44520c27",
+      "needsInterop": false
+    },
+    "vitepress-theme-website": {
+      "src": "../../../node_modules/.pnpm/vitepress-theme-website@1.0.8/node_modules/vitepress-theme-website/dist/index.mjs",
+      "file": "vitepress-theme-website.js",
+      "fileHash": "98a94f09",
+      "needsInterop": false
+    },
+    "@mdit-vue/shared": {
+      "src": "../../../node_modules/.pnpm/@mdit-vue+shared@2.1.3/node_modules/@mdit-vue/shared/dist/index.mjs",
+      "file": "@mdit-vue_shared.js",
+      "fileHash": "dabcb389",
+      "needsInterop": false
+    },
+    "busuanzi.pure.js": {
+      "src": "../../../node_modules/.pnpm/busuanzi.pure.js@1.0.3/node_modules/busuanzi.pure.js/index.js",
+      "file": "busuanzi__pure__js.js",
+      "fileHash": "9781918b",
+      "needsInterop": true
+    },
+    "canvas-confetti": {
+      "src": "../../../node_modules/.pnpm/canvas-confetti@1.9.3/node_modules/canvas-confetti/dist/confetti.module.mjs",
+      "file": "canvas-confetti.js",
+      "fileHash": "4c6bc16d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-CQOUZRMK": {
+      "file": "chunk-CQOUZRMK.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
+}
