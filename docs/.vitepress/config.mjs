@@ -4,11 +4,10 @@ import {generateSidebar, withSidebar} from "vitepress-sidebar";
 // https://vitepress.dev/reference/site-config
 const vitePressOptions = {
     base:'/simple/',
-    outDir: '../dist',
     title: "Simple的小站",
     description: "ProsperousEnding's Simple Co deSpace",
+    head: [["link", { rel: "icon", href: "/simple/logo.svg" }]],
     themeConfig: {
-        head: [["link", { rel: "icon", href: "/logo.svg" }]],
         logo: '/logo.svg',
         outline: [2, 6],
         // https://vitepress.dev/reference/default-theme-config

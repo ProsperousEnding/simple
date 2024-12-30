@@ -38,19 +38,20 @@ jobs:
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          pnpm run docs:build
-          mkdir -p docs/dist
-          touch docs/dist/.nojekyll
+        run: pnpm run docs:build
           
       - name: 检查构建输出
-        run: ls -la docs/dist
+        run: |-
+          ls -la docs/.vitepress/dist
+          echo "检查 .nojekyll 文件"
+          ls -la docs/.vitepress/dist/.nojekyll || echo ".nojekyll 文件不存在"
           
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/dist
+          publish_dir: docs/.vitepress/dist
           publish_branch: gh-pages
           force_orphan: true
           commit_message: "docs: deploy documentation"
+          enable_jekyll: false
