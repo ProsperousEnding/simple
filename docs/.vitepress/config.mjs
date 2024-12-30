@@ -56,9 +56,13 @@ const vitePressOptions = {
 }
 const vitePressSidebarOptions = {
     // VitePress Sidebar's options here...
-    documentRootPath: '/',
+    documentRootPath: 'docs',
+    useTitleFromFrontmatter: true,
     collapsed: false,
-    capitalizeFirst: true
+    capitalizeFirst: true,
+    hyphenToSpace: true,
+    includePath: true,  // 确保包含完整路径
+    rootGroupText: 'Contents',
 };
 
 export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions))
