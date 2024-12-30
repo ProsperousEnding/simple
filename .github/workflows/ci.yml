@@ -40,10 +40,10 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run docs:build
-          touch docs/dist/.nojekyll  # 修改 .nojekyll 文件位置
+          touch dist/.nojekyll  # 修改 .nojekyll 文件位置
           
       - name: 检查构建输出
-        run: ls -la docs/dist  # 修改检查目录
+        run: ls -la dist  # 修改检查目录
           
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
