@@ -14,6 +14,7 @@ const vitePressOptions = {
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Examples', link: '/markdown-examples'},
+            {text: 'About', link: '/about'},
             {text: 'cnblogs', link: 'https://www.cnblogs.com/ProsperousEnding'},
         ],
 
@@ -24,7 +25,8 @@ const vitePressOptions = {
                     {text: 'Markdown Examples', link: '/markdown-examples'},
                     {text: 'Runtime API Examples', link: '/api-examples'}
                 ]
-            }
+            },  
+
         ),],
 
         socialLinks: [

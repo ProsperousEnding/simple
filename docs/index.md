@@ -17,13 +17,14 @@ hero:
       text: CodeSpace
       link: http://www.pro-ending.ysepan.com/
 
+
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
+  - title: Code Enthusiast
+    details: Tech explorer & problem solver
+  - title: Yu-Gi-Oh! Duelist
+    details: Competitive card game strategist
+  - title: Gaming Aficionado
+    details: RPG & strategy game lover
+--- 
 <Confetti />
 
