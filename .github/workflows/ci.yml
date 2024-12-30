@@ -40,16 +40,16 @@ jobs:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run docs:build
-          touch docs/.vitepress/dist/.nojekyll  # 确保在正确的目录创建 .nojekyll
+          touch docs/dist/.nojekyll  # 修改 .nojekyll 文件位置
           
       - name: 检查构建输出
-        run: ls -la docs/.vitepress/dist
+        run: ls -la docs/dist  # 修改检查目录
           
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/.vitepress/dist
+          publish_dir: docs/dist  # 修改发布目录
           publish_branch: gh-pages
           force_orphan: true
           commit_message: "docs: deploy documentation"

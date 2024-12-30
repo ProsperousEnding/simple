@@ -4,6 +4,7 @@ import {generateSidebar, withSidebar} from "vitepress-sidebar";
 // https://vitepress.dev/reference/site-config
 const vitePressOptions = {
     base:'/simple/',
+    outDir: '../dist',
     title: "Simple的小站",
     description: "ProsperousEnding's Simple Co deSpace",
     themeConfig: {
