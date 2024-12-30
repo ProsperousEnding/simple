@@ -32,11 +32,15 @@ jobs:
         run: |-
           pnpm run docs:build
           touch .nojekyll 
+
+      # 添加这个检查步骤
+      - name: 检查构建输出
+        run: ls -la ./docs/vitepress/dist
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .vitepress/dist
+          publish_dir: ./docs/vitepress/dist
           publish_branch: gh-pages
           force_orphan: true # 添加这个配置
