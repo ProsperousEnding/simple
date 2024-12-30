@@ -1,46 +1,55 @@
 name: 构建部署
 on:
   schedule:
-    - cron: "0 */8 * * *"
+    - cron: "0 */8 * * *"  # 保留您的定时任务
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:  # 添加手动触发选项
 
 permissions:
-  contents: write # 添加这个权限配置
+  contents: write  # 添加写入权限
 
 jobs:
-  deploy-main:
+  deploy-docs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          persist-credentials: false # 添加这个配置
+          persist-credentials: false
 
       - name: 安装 pnpm
         uses: pnpm/action-setup@v2
         with:
-          run_install: true
           version: 8
-
+          
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+          
+      - name: 安装依赖
+        run: pnpm install
+        
       - name: 构建文档
         env:
           NODE_OPTIONS: --max_old_space_size=8192
         run: |-
           pnpm run docs:build
-          touch .nojekyll 
-
-      # 添加这个检查步骤
-      - name: 检查构建输出
-        run: ls -la ./docs/vitepress/dist
+          touch docs/.vitepress/dist/.nojekyll  # 确保在正确的目录创建 .nojekyll
           
-      - name: Deploy
+      - name: 检查构建输出
+        run: ls -la docs/.vitepress/dist
+          
+      - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/vitepress/dist
+          publish_dir: docs/.vitepress/dist
           publish_branch: gh-pages
-          force_orphan: true # 添加这个配置
+          force_orphan: true
+          commit_message: "docs: deploy documentation"
