@@ -9,7 +9,11 @@ const vitePressOptions = {
     head: [["link", { rel: "icon", href: "/simple/logo.svg" }]],
     themeConfig: {
         logo: '/logo.svg',
-        outline: [2, 6],
+        outline: {
+            level: [2, 3],
+            label: '目录'
+        },
+        aside: true,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             {text: 'Home', link: '/'},
@@ -17,17 +21,6 @@ const vitePressOptions = {
             {text: 'About', link: '/about'},
             {text: 'cnblogs', link: 'https://www.cnblogs.com/ProsperousEnding'},
         ],
-
-        sidebar: [generateSidebar(
-            {
-                text: 'Examples',
-                items: [
-                    {text: 'Markdown Examples', link: '/markdown-examples'},
-                    {text: 'Runtime API Examples', link: '/api-examples'}
-                ]
-            },  
-
-        ),],
 
         socialLinks: [
             {icon: 'github', link: 'https://github.com/ProsperousEnding'}
@@ -52,10 +45,9 @@ const vitePressOptions = {
                 },
             },
         },
-
     },
-
 }
+
 const vitePressSidebarOptions = {
     // VitePress Sidebar's options here...
     documentRootPath: 'docs',
@@ -63,8 +55,8 @@ const vitePressSidebarOptions = {
     collapsed: false,
     capitalizeFirst: true,
     hyphenToSpace: true,
-    includePath: true,  // 确保包含完整路径
-    rootGroupText: 'Contents',
+    includePath: true,
+    rootGroupText: '目录',
 };
 
 export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions))

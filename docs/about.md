@@ -1,4 +1,15 @@
+---
+layout: doc
+aside: true
+outline: deep
+---
+
 # About Me {.page-title}
+
+<h2 class="section-title hidden-title" id="about-me">
+  <span>👋</span>
+  <span>About Me</span>
+</h2>
 
 <div class="profile-container">
   <div class="profile-image-wrapper">
@@ -16,7 +27,7 @@
 </div>
 
 <div class="content-section">
-  <h2 class="section-title">
+  <h2 class="section-title" id="code-enthusiast">
     <span>💻</span>
     <span>Code Enthusiast</span>
   </h2>
@@ -71,7 +82,7 @@
 </div>
 
 <div class="content-section">
-  <h2 class="section-title">
+  <h2 class="section-title" id="yugioh-duelist">
     <span>⚔️</span>
     <span>Yu-Gi-Oh! Duelist</span>
   </h2>
@@ -121,7 +132,7 @@
 </div>
 
 <div class="content-section">
-  <h2 class="section-title">
+  <h2 class="section-title" id="gaming-aficionado">
     <span>🎮</span>
     <span>Gaming Aficionado</span>
   </h2>
@@ -156,7 +167,7 @@
 </div>
 
 <div class="content-section">
-  <h2 class="section-title">
+  <h2 class="section-title" id="what-drives-me">
     <span>🌟</span>
     <span>What Drives Me</span>
   </h2>
@@ -201,6 +212,18 @@
 .VPDoc:not(.has-sidebar) .container {
   max-width: 100% !important;
   margin: 0 !important;
+}
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .VPDoc .content {
@@ -1827,3 +1850,4 @@
   transform: rotate(30deg);
 }
 </style>
+
