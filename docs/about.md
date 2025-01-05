@@ -102,9 +102,9 @@
         </div>
         <div class="card-effect">
           <div class="effect-text">
-            <span class="emoji">✨</span>最喜欢的主角：藤木游作
+            <span class="emoji">👑</span>最喜欢的主角：藤木游作
             <br>
-            <span class="emoji">🃏</span>最喜欢的卡组：码语者（CodeTalker） 
+            <span class="emoji">🃏</span> 最喜欢的卡组：码语者（CodeTalker） 
           </div>
           <ul class="card-points">
             <li><span class="point-mark">⬡</span> <span class="emoji">🔄</span> 三原则思维：像写代码一样，每个决斗回合都需要明确的思路</li>
@@ -962,6 +962,7 @@
   transform-style: preserve-3d;
   perspective: 1000px;
   transition: transform 0.5s ease;
+  animation: card-glow 3s ease-in-out infinite;
 }
 
 .card-frame:hover {
@@ -992,6 +993,29 @@
   font-weight: 600;
   color: var(--duelist-color);
   margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-name::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    var(--duelist-color),
+    var(--code-color),
+    var(--duelist-color)
+  );
+  animation: line-flow 2s linear infinite;
+  background-size: 200% 100%;
+}
+
+@keyframes line-flow {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
 }
 
 .card-effect {
@@ -999,6 +1023,12 @@
   border-bottom: 1px solid rgba(99, 102, 241, 0.2);
   padding: 1rem 0;
   margin: 1rem 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card-effect:hover {
+  transform: translateY(-2px);
 }
 
 .effect-text {
@@ -1018,11 +1048,34 @@
   gap: 0.5rem;
   margin: 0.5rem 0;
   color: var(--vp-c-text-2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card-points li::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--duelist-color);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.card-points li:hover::before {
+  opacity: 0.5;
+  left: -1.5rem;
 }
 
 .point-mark {
   color: var(--duelist-color);
   font-size: 1.2rem;
+  display: inline-block;
+  animation: point-mark-spin 8s linear infinite;
 }
 
 .card-flavor {
@@ -1214,6 +1267,7 @@
   text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
   opacity: 0;
   transition: all 0.3s ease;
+  animation: marker-pulse 2s ease-in-out infinite;
 }
 
 .card-frame:hover .marker {
@@ -1264,22 +1318,25 @@
     rgba(59, 130, 246, 0.1) 100%
   );
   overflow: hidden;
+  position: relative;
 }
 
 .cyberse-text::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg,
-    transparent 0%,
-    rgba(99, 102, 241, 0.2) 50%,
-    transparent 100%
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(99, 102, 241, 0.1),
+    transparent
   );
-  transform: translateX(-100%);
-  animation: cyber-shine 3s infinite;
+  animation: cyber-flow 3s linear infinite;
+}
+
+@keyframes cyber-flow {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .cyberse-text p {
@@ -1374,5 +1431,399 @@
 .card-points li:hover .emoji {
   transform: scale(1.2);
   opacity: 1;
+}
+
+.card-points li:nth-child(1) .emoji {
+  color: #3b82f6; /* 循环箭头使用蓝色 */
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.card-points li:nth-child(2) .emoji {
+  color: #8b5cf6; /* 风暴使用紫色 */
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+}
+
+.card-points li:nth-child(3) .emoji {
+  color: #10b981; /* 连接使用绿色 */
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.card-points .emoji {
+  opacity: 0.9;
+  transition: all var(--transition-base);
+}
+
+.card-points li:hover .emoji {
+  transform: scale(1.2);
+  opacity: 1;
+  filter: brightness(1.2);
+}
+
+/* Emoji 动画效果 */
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes storm {
+  0% { transform: scale(1) rotate(0deg); filter: brightness(1); }
+  50% { transform: scale(1.2) rotate(180deg); filter: brightness(1.2); }
+  100% { transform: scale(1) rotate(360deg); filter: brightness(1); }
+}
+
+@keyframes link {
+  0% { transform: translateX(0) scale(1); }
+  25% { transform: translateX(5px) scale(1.1); }
+  75% { transform: translateX(-5px) scale(1.1); }
+  100% { transform: translateX(0) scale(1); }
+}
+
+@keyframes crown-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px) rotate(5deg); }
+}
+
+@keyframes cards-shuffle {
+  0% { transform: translateX(0) rotate(0); }
+  25% { transform: translateX(-2px) rotate(-5deg); }
+  75% { transform: translateX(2px) rotate(5deg); }
+  100% { transform: translateX(0) rotate(0); }
+}
+
+@keyframes globe-spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+@keyframes badge-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* 应用动画到具体的 emoji */
+.card-points li:nth-child(1) .emoji {
+  color: #3b82f6;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  animation: rotate 2s linear infinite;
+  display: inline-block;
+}
+
+.card-points li:nth-child(2) .emoji {
+  color: #8b5cf6;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+  animation: storm 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.card-points li:nth-child(3) .emoji {
+  color: #10b981;
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+  animation: link 1.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* 头部 emoji */
+.card-name .emoji {
+  animation: globe-spin 4s linear infinite;
+  display: inline-block;
+}
+
+/* 效果文本 emoji */
+.effect-text .emoji:first-of-type {
+  animation: crown-float 2s ease-in-out infinite;
+  display: inline-block;
+  color: #fbbf24;
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+}
+
+.effect-text .emoji:last-of-type {
+  animation: cards-shuffle 2s ease-in-out infinite;
+  display: inline-block;
+  color: #6366f1;
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+/* 徽章 emoji */
+.badge.duelist .emoji {
+  animation: badge-pulse 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* 引用部分 emoji */
+.cyberse-text .emoji {
+  animation: sparkle 2s ease-in-out infinite;
+  display: inline-block;
+  color: #6366f1;
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+/* 悬停时暂停动画 */
+.emoji:hover {
+  animation-play-state: paused;
+}
+
+/* 优化卡片框架动画 */
+@keyframes card-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(99, 102, 241, 0.5); }
+}
+
+@keyframes marker-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@keyframes point-mark-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 优化 emoji 动画 */
+@keyframes rotate {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes storm {
+  0% { transform: scale(1) rotate(0deg); filter: brightness(1); }
+  50% { transform: scale(1.2) rotate(180deg); filter: brightness(1.2); }
+  100% { transform: scale(1) rotate(360deg); filter: brightness(1); }
+}
+
+@keyframes link {
+  0% { transform: translateX(0) scale(1); }
+  25% { transform: translateX(5px) scale(1.1); }
+  75% { transform: translateX(-5px) scale(1.1); }
+  100% { transform: translateX(0) scale(1); }
+}
+
+/* 添加新的交互动画 */
+.card-frame {
+  animation: card-glow 3s ease-in-out infinite;
+}
+
+.marker {
+  animation: marker-pulse 2s ease-in-out infinite;
+}
+
+.point-mark {
+  display: inline-block;
+  animation: point-mark-spin 8s linear infinite;
+}
+
+/* 优化徽章动画 */
+.badge.duelist {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge.duelist::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: badge-shine 3s ease-in-out infinite;
+}
+
+@keyframes badge-shine {
+  0% { transform: translateX(-100%) rotate(45deg); }
+  50% { transform: translateX(100%) rotate(45deg); }
+  100% { transform: translateX(-100%) rotate(45deg); }
+}
+
+/* 优化文字动画 */
+.card-name {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-name::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    var(--duelist-color),
+    var(--code-color),
+    var(--duelist-color)
+  );
+  animation: line-flow 2s linear infinite;
+  background-size: 200% 100%;
+}
+
+@keyframes line-flow {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* 优化引用部分 */
+.cyberse-text {
+  position: relative;
+}
+
+.cyberse-text::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(99, 102, 241, 0.1),
+    transparent
+  );
+  animation: cyber-flow 3s linear infinite;
+}
+
+@keyframes cyber-flow {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* 优化卡片描述动画 */
+.card-effect {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card-effect:hover {
+  transform: translateY(-2px);
+}
+
+.card-points li {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card-points li::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--duelist-color);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.card-points li:hover::before {
+  opacity: 0.5;
+  left: -1.5rem;
+}
+
+/* 全局动画优化 */
+* {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 性能优化 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 更细腻的 Emoji 动画效果 */
+@keyframes subtle-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes subtle-storm {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes subtle-link {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes subtle-crown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes subtle-cards {
+  0% { transform: rotate(0); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(0); }
+}
+
+/* 应用更细腻的动画 */
+.effect-text .emoji:first-of-type {
+  animation: subtle-crown 3s ease-in-out infinite;
+  display: inline-block;
+  color: #fbbf24;
+  text-shadow: 0 0 5px rgba(251, 191, 36, 0.2);
+}
+
+.effect-text .emoji:last-of-type {
+  animation: subtle-cards 3s ease-in-out infinite;
+  display: inline-block;
+  color: #6366f1;
+  text-shadow: 0 0 5px rgba(99, 102, 241, 0.2);
+}
+
+.card-points li:nth-child(1) .emoji {
+  animation: subtle-rotate 8s linear infinite;
+  color: #3b82f6;
+  text-shadow: 0 0 5px rgba(59, 130, 246, 0.2);
+}
+
+.card-points li:nth-child(2) .emoji {
+  animation: subtle-storm 4s ease-in-out infinite;
+  color: #8b5cf6;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.2);
+}
+
+.card-points li:nth-child(3) .emoji {
+  animation: subtle-link 3s ease-in-out infinite;
+  color: #10b981;
+  text-shadow: 0 0 5px rgba(16, 185, 129, 0.2);
+}
+
+/* 统一的悬停效果 */
+.emoji:hover {
+  animation-play-state: paused;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* 减小六边形标记的动画 */
+.point-mark {
+  animation: none;
+  transition: transform 0.3s ease;
+}
+
+.card-points li:hover .point-mark {
+  transform: rotate(30deg);
 }
 </style>
