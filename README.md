@@ -1,97 +1,165 @@
-# 🚀 ProsperousEnding's Tech Blog
+# 🚀 ProsperousEnding's Simple Blog
 
 <div align="center">
-  
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=646CFF&center=true&vCenter=true&width=435&lines=Welcome+to+ProsperousEnding's+Simple+Blog;A+Modern+VitePress+Blog;Powered+by+Cursor+AI)](https://git.io/typing-svg)
+
+<p align="center">
+  <img src="docs/public/logo.svg" alt="ProsperousEnding Tech Blog" width="120" height="120" />
+</p>
+
+**基于 VitePress 构建的现代化技术博客 | 极客风格 | AI 驱动**
+
+---
+
+### 🛠️ 技术栈
+
 [![Built with VitePress](https://img.shields.io/badge/Built%20with-VitePress-646CFF?style=flat-square)](https://vitepress.dev/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.x-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![UnoCSS](https://img.shields.io/badge/UnoCSS-Latest-333333?style=flat-square)](https://github.com/unocss/unocss)
 [![Cursor](https://img.shields.io/badge/Built%20with-Cursor%20AI-blue?style=flat-square)](https://cursor.sh/)
 
-<p align="center">
-  <img src="docs/public/logo.svg" alt="ProsperousEnding Tech Blog" width="120" height="120" />
-</p>
+### 📊 项目状态
+
+[![GitHub stars](https://img.shields.io/github/stars/ProsperousEnding/simple?style=social)](https://github.com/ProsperousEnding/simple/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ProsperousEnding/simple?style=social)](https://github.com/ProsperousEnding/simple/network)
+[![GitHub issues](https://img.shields.io/github/issues/ProsperousEnding/simple)](https://github.com/ProsperousEnding/simple/issues)
+[![GitHub license](https://img.shields.io/github/license/ProsperousEnding/simple)](https://github.com/ProsperousEnding/simple/blob/main/LICENSE)
+[![Deploy Status](https://img.shields.io/github/deployments/ProsperousEnding/simple/Production?label=deploy)](https://github.com/ProsperousEnding/simple/deployments)
+
+### 🔍 快速导航
+
+<kbd>[📚 文档](docs/)</kbd> • 
+<kbd>[🎨 示例](examples/)</kbd> • 
+<kbd>[📦 下载](releases/)</kbd> • 
+<kbd>[💡 问题](issues/)</kbd> • 
+<kbd>[🤝 贡献](CONTRIBUTING.md)</kbd>
+
+### 📈 访问统计
+
+[![Visits Badge](https://badges.pufler.dev/visits/ProsperousEnding/simple)](https://badges.pufler.dev)
+[![Years Badge](https://badges.pufler.dev/years/ProsperousEnding)](https://badges.pufler.dev)
+[![Repos Badge](https://badges.pufler.dev/repos/ProsperousEnding)](https://badges.pufler.dev)
+[![Gists Badge](https://badges.pufler.dev/gists/ProsperousEnding)](https://badges.pufler.dev)
 
 </div>
 
-## 🌟 项目简介
-
-这是一个基于 VitePress 构建的个人技术博客，旨在记录技术成长历程、分享经验见解，并提供一个富有设计感的学习交流平台。项目采用现代化的技术栈，结合了极客风格的 UI 设计，打造独特的浏览体验。项目全程使用 Cursor AI 编译器开发，充分利用 AI 辅助编程提升开发效率。
+---
 
 ## ✨ 特性
 
+<table>
+<tr>
+<td>
+
+### 🎯 核心功能
 - 📝 技术博文沉淀
 - 🎨 极客风格设计
 - 🔗 实用网址导航
 - 🌐 双语文档支持
+
+</td>
+<td>
+
+### 🚀 技术优势
 - 🎯 响应式布局
 - ⚡️ 快速的页面加载
 - 🎭 优雅的动画效果
+- 🤖 AI 辅助开发
 
-## 🛠️ 技术栈
+</td>
+</tr>
+</table>
 
-- **开发工具**: [Cursor](https://cursor.sh/) - AI 驱动的智能编程工具
-- **框架**: [VitePress](https://vitepress.dev/) - 新一代静态站点生成器
-- **前端**: [Vue.js 3](https://vuejs.org/) - 渐进式 JavaScript 框架
-- **样式**: 
-  - [TailwindCSS](https://tailwindcss.com/) - 实用优先的 CSS 框架
-  - [UnoCSS](https://github.com/unocss/unocss) - 即时原子化 CSS 引擎
-  - [Shadcn/ui](https://ui.shadcn.com/) - 精美的 UI 组件库
+## 📊 项目统计
 
-## 📚 文档规范
+<table>
+<tr>
+<td>
 
-- 使用 JSDoc 格式编写函数和组件注释
-- 严格的 PropTypes 类型验证
-- 目录级 README.md 文档
-- 中英双语文档支持
-- Markdown 格式规范
+### 💻 编程语言占比
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ProsperousEnding&layout=compact&theme=tokyonight)
 
-## 🎯 项目目标
+</td>
+<td>
 
-1. 📈 记录个人技术成长轨迹
-2. 🌟 分享独到的技术见解
-3. 🤝 构建技术交流平台
-4. 🎨 打造极具设计感的博客界面
+### 📈 GitHub 统计
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ProsperousEnding&show_icons=true&theme=tokyonight)
 
-## 🔍 代码规范
+</td>
+</tr>
+</table>
 
-- 遵循 Vue.js 官方风格指南
-- 统一的代码格式化配置
-- 严格的代码审查流程
-- 清晰的组件文档
-- 模块化的代码组织
-
-## 📦 开发环境设置
+## 🛠️ 开发环境
 
 ```bash
-# 安装依赖
+# 📦 安装依赖
 pnpm install
 
-# 启动开发服务器
+# 🚀 启动开发服务器
 pnpm dev
 
-# 构建生产版本
+# 🏗️ 构建生产版本
 pnpm build
 ```
 
-## 🤝 贡献指南
+## 📚 文档规范
 
-欢迎提交 Issue 和 Pull Request 来帮助改进这个项目！
+<table>
+<tr>
+<td>
 
-## 📝 开源协议
+### 📝 代码规范
+- JSDoc 格式注释
+- PropTypes 类型验证
+- Vue.js 官方风格指南
+- 统一代码格式化
 
-[MIT License](LICENSE)
+</td>
+<td>
+
+### 📖 文档要求
+- 目录级 README
+- 中英双语支持
+- Markdown 格式
+- 组件文档完备
+
+</td>
+</tr>
+</table>
+
+## 🤝 贡献者
+
+<div align="center">
+  <a href="https://github.com/ProsperousEnding/simple/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=ProsperousEnding/simple" />
+  </a>
+</div>
 
 ## 🙏 鸣谢
 
-特别感谢以下开源项目的支持：
-
-- [VitePress](https://vitepress.dev/) - 为本项目提供强大的静态站点生成能力
-- [Vue.js](https://vuejs.org/) - 提供优雅的响应式编程范式
-- [Cursor](https://cursor.sh/) - AI 驱动的智能编程助手，显著提升开发效率
+<table>
+<tr>
+<td align="center">
+<img src="https://vitepress.dev/vitepress-logo-large.webp" width="40"/><br />
+<sub><b>VitePress</b></sub>
+</td>
+<td align="center">
+<img src="https://vuejs.org/images/logo.png" width="40"/><br />
+<sub><b>Vue.js</b></sub>
+</td>
+<td align="center">
+<img src="https://cursor.sh/brand/logo.svg" width="40"/><br />
+<sub><b>Cursor</b></sub>
+</td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
   <sub>Built with ❤️ by ProsperousEnding</sub>
+  <br>
+  <sub>Released under the MIT License.</sub>
 </div> 
