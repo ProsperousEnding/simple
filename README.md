@@ -10,9 +10,9 @@
 
 **基于 VitePress 构建的现代化技术博客 | 极客风格 | AI 驱动**
 
----
+</div>
 
-### 🛠️ 技术栈
+## ⚡️ 技术栈
 
 [![Built with VitePress](https://img.shields.io/badge/Built%20with-VitePress-646CFF?style=flat-square)](https://vitepress.dev/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.x-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org/)
@@ -20,7 +20,18 @@
 [![UnoCSS](https://img.shields.io/badge/UnoCSS-Latest-333333?style=flat-square)](https://github.com/unocss/unocss)
 [![Cursor](https://img.shields.io/badge/Built%20with-Cursor%20AI-blue?style=flat-square)](https://cursor.sh/)
 
-### 📊 项目状态
+## 🎯 特性
+
+- 📝 **技术博文沉淀** - 记录技术成长历程
+- 🎨 **极客风格设计** - 现代化的 UI 设计
+- 🌐 **双语文档支持** - 中英文档完备
+- ⚡️ **快速的页面加载** - 基于 VitePress 构建
+- 🎭 **优雅的动画效果** - 丝滑的用户体验
+- 🤖 **AI 辅助开发** - 由 Cursor AI 驱动
+
+## 📊 项目状态
+
+<div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/ProsperousEnding/simple?style=social)](https://github.com/ProsperousEnding/simple/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/ProsperousEnding/simple?style=social)](https://github.com/ProsperousEnding/simple/network)
@@ -28,76 +39,15 @@
 [![GitHub license](https://img.shields.io/github/license/ProsperousEnding/simple)](https://github.com/ProsperousEnding/simple/blob/main/LICENSE)
 [![Deploy Status](https://img.shields.io/github/deployments/ProsperousEnding/simple/Production?label=deploy)](https://github.com/ProsperousEnding/simple/deployments)
 
-### 🔍 快速导航
-
-<kbd>[📚 文档](docs/)</kbd> • 
-<kbd>[🎨 示例](examples/)</kbd> • 
-<kbd>[📦 下载](releases/)</kbd> • 
-<kbd>[💡 问题](issues/)</kbd> • 
-<kbd>[🤝 贡献](CONTRIBUTING.md)</kbd>
-
-### 📈 访问统计
-
-[![Visits Badge](https://badges.pufler.dev/visits/ProsperousEnding/simple)](https://badges.pufler.dev)
-[![Years Badge](https://badges.pufler.dev/years/ProsperousEnding)](https://badges.pufler.dev)
-[![Repos Badge](https://badges.pufler.dev/repos/ProsperousEnding)](https://badges.pufler.dev)
-[![Gists Badge](https://badges.pufler.dev/gists/ProsperousEnding)](https://badges.pufler.dev)
-
 </div>
 
----
-
-## ✨ 特性
-
-<table>
-<tr>
-<td>
-
-### 🎯 核心功能
-- 📝 技术博文沉淀
-- 🎨 极客风格设计
-- 🔗 实用网址导航
-- 🌐 双语文档支持
-
-</td>
-<td>
-
-### 🚀 技术优势
-- 🎯 响应式布局
-- ⚡️ 快速的页面加载
-- 🎭 优雅的动画效果
-- 🤖 AI 辅助开发
-
-</td>
-</tr>
-</table>
-
-## 📊 项目统计
-
-<table>
-<tr>
-<td>
-
-### 💻 编程语言占比
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ProsperousEnding&layout=compact&theme=tokyonight)
-
-</td>
-<td>
-
-### 📈 GitHub 统计
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ProsperousEnding&show_icons=true&theme=tokyonight)
-
-</td>
-</tr>
-</table>
-
-## 🛠️ 开发环境
+## 🚀 快速开始
 
 ```bash
 # 📦 安装依赖
 pnpm install
 
-# 🚀 启动开发服务器
+# 🎯 启动开发服务器
 pnpm dev
 
 # 🏗️ 构建生产版本
@@ -106,28 +56,27 @@ pnpm build
 
 ## 📚 文档规范
 
-<table>
-<tr>
-<td>
+- **代码规范**
+  - JSDoc 格式注释
+  - PropTypes 类型验证
+  - Vue.js 官方风格指南
+  - 统一代码格式化配置
 
-### 📝 代码规范
-- JSDoc 格式注释
-- PropTypes 类型验证
-- Vue.js 官方风格指南
-- 统一代码格式化
+- **文档要求**
+  - 目录级 README 文档
+  - 中英双语文档支持
+  - Markdown 格式规范
+  - 组件文档完备
 
-</td>
-<td>
+## 📈 项目统计
 
-### 📖 文档要求
-- 目录级 README
-- 中英双语支持
-- Markdown 格式
-- 组件文档完备
+<div align="center">
 
-</td>
-</tr>
-</table>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ProsperousEnding&show_icons=true&theme=tokyonight&hide_border=true)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ProsperousEnding&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
 
 ## 🤝 贡献者
 
@@ -137,24 +86,22 @@ pnpm build
   </a>
 </div>
 
+## 🔍 快速导航
+
+<div align="center">
+
+[📚 文档](docs/) • [🎨 示例](examples/) • [📦 下载](releases/) • [💡 问题](issues/) • [🤝 贡献](CONTRIBUTING.md)
+
+</div>
+
 ## 🙏 鸣谢
 
-<table>
-<tr>
-<td align="center">
-<img src="https://vitepress.dev/vitepress-logo-large.webp" width="40"/><br />
-<sub><b>VitePress</b></sub>
-</td>
-<td align="center">
-<img src="https://vuejs.org/images/logo.png" width="40"/><br />
-<sub><b>Vue.js</b></sub>
-</td>
-<td align="center">
-<img src="https://cursor.sh/brand/logo.svg" width="40"/><br />
-<sub><b>Cursor</b></sub>
-</td>
-</tr>
-</table>
+<div align="center">
+
+| <img src="https://vitepress.dev/vitepress-logo-large.webp" width="40"/><br/><sub><b>VitePress</b></sub> | <img src="https://vuejs.org/images/logo.png" width="40"/><br/><sub><b>Vue.js</b></sub> | <img src="https://cursor.sh/brand/logo.svg" width="40"/><br/><sub><b>Cursor</b></sub> |
+|:---:|:---:|:---:|
+
+</div>
 
 ---
 
