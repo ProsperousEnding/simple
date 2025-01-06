@@ -75,8 +75,8 @@ outline: deep
         <span class="rocket">🚀</span>
       </p>
     </div>
-    <div class="image-container">
-      <img src="/compute.jpg" alt="Coding Setup" class="section-image">
+    <div class="about-image-container">
+      <img src="/compute.jpg" alt="Coding Setup" class="about-section-image">
     </div>
   </div>
 </div>
@@ -88,9 +88,9 @@ outline: deep
   </h2>
   <div class="section-container duelist-container">
     <div class="duelist-left">
-      <div class="image-container">
+      <div class="about-image-container">
         <div class="card-frame">
-          <img src="/youzuo.png" alt="Yusaku Fujiki" class="section-image">
+          <img src="/youzuo.png" alt="Yusaku Fujiki" class="about-section-image">
           <div class="frame-overlay">
             <div class="link-markers">
               <span class="marker top">▲</span>
@@ -158,9 +158,9 @@ outline: deep
         </div>
       </div>
     </div>
-    <div class="image-container">
+    <div class="about-image-container">
       <div class="game-frame">
-        <img src="/anby-bb.jpg" alt="Anby eating bread" class="section-image">
+        <img src="/anby-bb.jpg" alt="Anby eating bread" class="about-section-image">
       </div>
     </div>
   </div>
@@ -388,7 +388,7 @@ outline: deep
   min-width: 0;
 }
 
-.image-container {
+.about-image-container {
   flex-shrink: 0;
   width: 300px;
   border-radius: 0.5rem;
@@ -397,7 +397,7 @@ outline: deep
   position: relative;
 }
 
-.image-container::after {
+.about-image-container::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -414,7 +414,7 @@ outline: deep
   transition: opacity 0.3s ease;
 }
 
-.image-container:hover::after {
+.about-image-container:hover::after {
   opacity: 1;
   animation: shine-sweep 1.5s ease-in-out;
 }
@@ -424,13 +424,13 @@ outline: deep
   100% { transform: translateX(100%) rotate(45deg); }
 }
 
-.section-image {
+.about-section-image {
   width: 100%;
   height: auto;
   transition: all var(--transition-base);
 }
 
-.section-image:hover {
+.about-section-image:hover {
   transform: scale(1.05);
 }
 
@@ -809,7 +809,7 @@ outline: deep
     height: 100px;
   }
   
-  .image-container {
+  .about-image-container {
     width: 100%;
   }
   
@@ -918,7 +918,7 @@ outline: deep
   gap: 1.25rem;
 }
 
-.duelist-left .image-container {
+.duelist-left .about-image-container {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;

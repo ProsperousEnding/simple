@@ -1,0 +1,36 @@
+#项目背景
+这是一个基于VitePress的博客项目，旨在记录我的技术成长历程。
+
+# 项目目标
+1. 记录我的技术成长历程
+2. 分享我的技术经验和见解
+3. 提供一个学习和交流的平台
+3. 记录各个网址导航
+4. 具有设计感和极客风格的UI博客
+
+#首选库
+1. vitepress
+2. vue.js
+3. tailwindcss
+4. unocss
+5. shadcn/ui
+
+# 样式美化规则
+1. 使用tailwindcss进行样式美化
+2. 使用unocss进行样式美化
+3. 使用shadcn/ui进行样式美化    
+4. 作为博客，使用极客风格，使用动画
+5. 拥有基本的网页审美,博客样式参考VitePress官网和Vue3.js官网
+6. 博客样式参考Vue3.js官网
+7. 博客样式参考https://www.cnblogs.com/ProsperousEnding
+
+# 文档规范
+- 使用 JSDoc 格式编写函数和组件的注释
+- 组件必须包含 PropTypes 验证
+- 每个主要目录必须包含 README.md 文件
+- 同时提供英语和中文版本的 README.md 文件
+- 使用 Markdown 格式编写文档
+
+# 删除代码
+- 删除代码时，必须提供删除的理由和替代方案
+- 拥有替代方案时,删除没必要的代码
