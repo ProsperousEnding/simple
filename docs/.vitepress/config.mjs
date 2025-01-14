@@ -3,10 +3,10 @@ import {generateSidebar, withSidebar} from "vitepress-sidebar";
 
 // https://vitepress.dev/reference/site-config
 const vitePressOptions = {
-    base:'/simple/',
+    base: '/',
     title: "Simple的小站",
     description: "ProsperousEnding's Simple Co deSpace",
-    head: [["link", { rel: "icon", href: "/simple/logo.svg" }]],
+    head: [["link", { rel: "icon", href: "/logo.svg" }]],
     themeConfig: {
         logo: '/logo.svg',
         outline: {
