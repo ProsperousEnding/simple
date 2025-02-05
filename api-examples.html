@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Runtime API Examples | Simple的小站</title>
+    <meta name="description" content="ProsperousEnding's Simple Co deSpace">
+    <meta name="generator" content="VitePress v1.6.3">
+    <link rel="preload stylesheet" href="/assets/style.CPAE9EQ1.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
+    
+    <script type="module" src="/assets/app.DbxigRrq.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.BfwAwWJA.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.ByciF0Oj.js">
+    <link rel="modulepreload" href="/assets/api-examples.md.BagwuWCj.lean.js">
+    <link rel="icon" href="/logo.svg">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-46cada41><!--[--><!--]--><!--[--><span tabindex="-1" data-v-82af304d></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-82af304d>Skip to content</a><!--]--><!----><header class="VPNav" data-v-46cada41 data-v-0ec1cc98><div class="VPNavBar" data-v-0ec1cc98 data-v-97e37718><div class="wrapper" data-v-97e37718><div class="container" data-v-97e37718><div class="title" data-v-97e37718><div class="VPNavBarTitle has-sidebar" data-v-97e37718 data-v-9620ba61><a class="title" href="/" data-v-9620ba61><!--[--><!--]--><!--[--><img class="VPImage logo" src="/logo.svg" alt data-v-ce14eec4><!--]--><span data-v-9620ba61>Simple的小站</span><!--[--><!--]--></a></div></div><div class="content" data-v-97e37718><div class="content-body" data-v-97e37718><!--[--><!--]--><div class="VPNavBarSearch search" data-v-97e37718><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="搜索文档"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">搜索文档</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-97e37718 data-v-fd0d02da><span id="main-nav-aria-label" class="visually-hidden" data-v-fd0d02da> Main Navigation </span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-fd0d02da data-v-c7cdc412><!--[--><span data-v-c7cdc412>Home</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/markdown-examples.html" tabindex="0" data-v-fd0d02da data-v-c7cdc412><!--[--><span data-v-c7cdc412>Examples</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/about.html" tabindex="0" data-v-fd0d02da data-v-c7cdc412><!--[--><span data-v-c7cdc412>About</span><!--]--></a><!--]--><!--[--><a class="VPLink link vp-external-link-icon VPNavBarMenuLink" href="https://www.cnblogs.com/ProsperousEnding" target="_blank" rel="noreferrer" tabindex="0" data-v-fd0d02da data-v-c7cdc412><!--[--><span data-v-c7cdc412>cnblogs</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-97e37718 data-v-b569c26a><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-b569c26a data-v-a8d11977 data-v-d4fb1d40><span class="check" data-v-d4fb1d40><span class="icon" data-v-d4fb1d40><!--[--><span class="vpi-sun sun" data-v-a8d11977></span><span class="vpi-moon moon" data-v-a8d11977></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-97e37718 data-v-25e71cd1 data-v-93344165><!--[--><a class="VPSocialLink no-icon" href="https://github.com/ProsperousEnding" aria-label="github" target="_blank" rel="noopener" data-v-93344165 data-v-b8870a62><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-97e37718 data-v-7f49392e data-v-3174d294><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-3174d294><span class="vpi-more-horizontal icon" data-v-3174d294></span></button><div class="menu" data-v-3174d294><div class="VPMenu" data-v-3174d294 data-v-90ca5f1b><!----><!--[--><!--[--><!----><div class="group" data-v-7f49392e><div class="item appearance" data-v-7f49392e><p class="label" data-v-7f49392e>Appearance</p><div class="appearance-action" data-v-7f49392e><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-7f49392e data-v-a8d11977 data-v-d4fb1d40><span class="check" data-v-d4fb1d40><span class="icon" data-v-d4fb1d40><!--[--><span class="vpi-sun sun" data-v-a8d11977></span><span class="vpi-moon moon" data-v-a8d11977></span><!--]--></span></span></button></div></div></div><div class="group" data-v-7f49392e><div class="item social-links" data-v-7f49392e><div class="VPSocialLinks social-links-list" data-v-7f49392e data-v-93344165><!--[--><a class="VPSocialLink no-icon" href="https://github.com/ProsperousEnding" aria-label="github" target="_blank" rel="noopener" data-v-93344165 data-v-b8870a62><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-97e37718 data-v-3c8ac357><span class="container" data-v-3c8ac357><span class="top" data-v-3c8ac357></span><span class="middle" data-v-3c8ac357></span><span class="bottom" data-v-3c8ac357></span></span></button></div></div></div></div><div class="divider" data-v-97e37718><div class="divider-line" data-v-97e37718></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-46cada41 data-v-2dee1f17><div class="container" data-v-2dee1f17><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-2dee1f17><span class="vpi-align-left menu-icon" data-v-2dee1f17></span><span class="menu-text" data-v-2dee1f17>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-2dee1f17 data-v-706d3217><button data-v-706d3217>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-46cada41 data-v-2a145dbd><div class="curtain" data-v-2a145dbd></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-2a145dbd><span class="visually-hidden" id="sidebar-aria-label" data-v-2a145dbd> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="no-transition group" data-v-45128375><section class="VPSidebarItem level-0 has-active" data-v-45128375 data-v-4cd12723><div class="item" role="button" tabindex="0" data-v-4cd12723><div class="indicator" data-v-4cd12723></div><h2 class="text" data-v-4cd12723>目录</h2><!----></div><div class="items" data-v-4cd12723><!--[--><div class="VPSidebarItem level-1 is-link" data-v-4cd12723 data-v-4cd12723><div class="item" data-v-4cd12723><div class="indicator" data-v-4cd12723></div><a class="VPLink link link" href="/about.html" data-v-4cd12723><!--[--><p class="text" data-v-4cd12723>About</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-4cd12723 data-v-4cd12723><div class="item" data-v-4cd12723><div class="indicator" data-v-4cd12723></div><a class="VPLink link link" href="/api-examples.html" data-v-4cd12723><!--[--><p class="text" data-v-4cd12723>Api examples</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-4cd12723 data-v-4cd12723><div class="item" data-v-4cd12723><div class="indicator" data-v-4cd12723></div><a class="VPLink link link" href="/markdown-examples.html" data-v-4cd12723><!--[--><p class="text" data-v-4cd12723>Markdown examples</p><!--]--></a><!----></div><!----></div><section class="VPSidebarItem level-1 collapsible" data-v-4cd12723 data-v-4cd12723><div class="item" role="button" tabindex="0" data-v-4cd12723><div class="indicator" data-v-4cd12723></div><h3 class="text" data-v-4cd12723>Notes</h3><div class="caret" role="button" aria-label="toggle section" tabindex="0" data-v-4cd12723><span class="vpi-chevron-right caret-icon" data-v-4cd12723></span></div></div><div class="items" data-v-4cd12723><!--[--><div class="VPSidebarItem level-2 is-link" data-v-4cd12723 data-v-4cd12723><div class="item" data-v-4cd12723><div class="indicator" data-v-4cd12723></div><a class="VPLink link link" href="/notes/Vue3%E5%B0%81%E8%A3%85%E4%B8%80%E4%B8%AAElementPlus%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%8A%E4%BC%A0%E7%BB%84%E4%BB%B62--%E6%97%A0%E5%BC%B9%E7%AA%97.html" data-v-4cd12723><!--[--><p class="text" data-v-4cd12723>Vue3封装一个ElementPlus自定义上传组件2  无弹窗</p><!--]--></a><!----></div><!----></div><!--]--></div></section><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-46cada41 data-v-d4bdad33><div class="VPDoc has-sidebar has-aside" data-v-d4bdad33 data-v-03864d9f><!--[--><!--]--><div class="container" data-v-03864d9f><div class="aside" data-v-03864d9f><div class="aside-curtain" data-v-03864d9f></div><div class="aside-container" data-v-03864d9f><div class="aside-content" data-v-03864d9f><div class="VPDocAside" data-v-03864d9f data-v-b9132f9a><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-b9132f9a data-v-2d71a95a><div class="content" data-v-2d71a95a><div class="outline-marker" data-v-2d71a95a></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-2d71a95a>目录</div><ul class="VPDocOutlineItem root" data-v-2d71a95a data-v-0332be60><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-b9132f9a></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-03864d9f><div class="content-container" data-v-03864d9f><!--[--><!--]--><main class="main" data-v-03864d9f><div style="position:relative;" class="vp-doc _api-examples" data-v-03864d9f><div><h1 id="runtime-api-examples" tabindex="-1">Runtime API Examples <a class="header-anchor" href="#runtime-api-examples" aria-label="Permalink to &quot;Runtime API Examples&quot;">​</a></h1><p>This page demonstrates usage of some of the runtime APIs provided by VitePress.</p><p>The main <code>useData()</code> API can be used to access site, theme, and page data for the current page. It works in both <code>.md</code> and <code>.vue</code> files:</p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;script setup&gt;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">import { useData } from &#39;vitepress&#39;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">const { theme, page, frontmatter } = useData()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;/script&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">## Results</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Theme Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ theme }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ page }}&lt;/pre&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-light-font-weight:bold;--shiki-dark:#79B8FF;--shiki-dark-font-weight:bold;">### Page Frontmatter</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;pre&gt;{{ frontmatter }}&lt;/pre&gt;</span></span></code></pre></div><h2 id="results" tabindex="-1">Results <a class="header-anchor" href="#results" aria-label="Permalink to &quot;Results&quot;">​</a></h2><h3 id="theme-data" tabindex="-1">Theme Data <a class="header-anchor" href="#theme-data" aria-label="Permalink to &quot;Theme Data&quot;">​</a></h3><pre>{
+  &quot;logo&quot;: &quot;/logo.svg&quot;,
+  &quot;outline&quot;: {
+    &quot;level&quot;: [
+      2,
+      3
+    ],
+    &quot;label&quot;: &quot;目录&quot;
+  },
+  &quot;aside&quot;: true,
+  &quot;nav&quot;: [
+    {
+      &quot;text&quot;: &quot;Home&quot;,
+      &quot;link&quot;: &quot;/&quot;
+    },
+    {
+      &quot;text&quot;: &quot;Examples&quot;,
+      &quot;link&quot;: &quot;/markdown-examples&quot;
+    },
+    {
+      &quot;text&quot;: &quot;About&quot;,
+      &quot;link&quot;: &quot;/about&quot;
+    },
+    {
+      &quot;text&quot;: &quot;cnblogs&quot;,
+      &quot;link&quot;: &quot;https://www.cnblogs.com/ProsperousEnding&quot;
+    }
+  ],
+  &quot;socialLinks&quot;: [
+    {
+      &quot;icon&quot;: &quot;github&quot;,
+      &quot;link&quot;: &quot;https://github.com/ProsperousEnding&quot;
+    }
+  ],
+  &quot;search&quot;: {
+    &quot;provider&quot;: &quot;local&quot;,
+    &quot;options&quot;: {
+      &quot;translations&quot;: {
+        &quot;button&quot;: {
+          &quot;buttonText&quot;: &quot;搜索文档&quot;,
+          &quot;buttonAriaLabel&quot;: &quot;搜索文档&quot;
+        },
+        &quot;modal&quot;: {
+          &quot;noResultsText&quot;: &quot;无法找到相关结果&quot;,
+          &quot;resetButtonTitle&quot;: &quot;清除查询条件&quot;,
+          &quot;footer&quot;: {
+            &quot;selectText&quot;: &quot;选择&quot;,
+            &quot;navigateText&quot;: &quot;切换&quot;
+          }
+        }
+      }
+    }
+  },
+  &quot;sidebar&quot;: [
+    {
+      &quot;text&quot;: &quot;目录&quot;,
+      &quot;items&quot;: [
+        {
+          &quot;text&quot;: &quot;About&quot;,
+          &quot;link&quot;: &quot;/about&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Api examples&quot;,
+          &quot;link&quot;: &quot;/api-examples&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Markdown examples&quot;,
+          &quot;link&quot;: &quot;/markdown-examples&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Notes&quot;,
+          &quot;items&quot;: [
+            {
+              &quot;text&quot;: &quot;Vue3封装一个ElementPlus自定义上传组件2  无弹窗&quot;,
+              &quot;link&quot;: &quot;/notes/Vue3封装一个ElementPlus自定义上传组件2--无弹窗&quot;
+            }
+          ],
+          &quot;collapsed&quot;: false
+        }
+      ]
+    }
+  ]
+}</pre><h3 id="page-data" tabindex="-1">Page Data <a class="header-anchor" href="#page-data" aria-label="Permalink to &quot;Page Data&quot;">​</a></h3><pre>{
+  &quot;title&quot;: &quot;Runtime API Examples&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;frontmatter&quot;: {
+    &quot;outline&quot;: &quot;deep&quot;
+  },
+  &quot;headers&quot;: [],
+  &quot;relativePath&quot;: &quot;api-examples.md&quot;,
+  &quot;filePath&quot;: &quot;api-examples.md&quot;
+}</pre><h3 id="page-frontmatter" tabindex="-1">Page Frontmatter <a class="header-anchor" href="#page-frontmatter" aria-label="Permalink to &quot;Page Frontmatter&quot;">​</a></h3><pre>{
+  &quot;outline&quot;: &quot;deep&quot;
+}</pre><h2 id="more" tabindex="-1">More <a class="header-anchor" href="#more" aria-label="Permalink to &quot;More&quot;">​</a></h2><p>Check out the documentation for the <a href="https://vitepress.dev/reference/runtime-api#usedata" target="_blank" rel="noreferrer">full list of runtime APIs</a>.</p></div></div></main><footer class="VPDocFooter" data-v-03864d9f data-v-79bc013e><!--[--><!--]--><!----><nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-79bc013e><span class="visually-hidden" id="doc-footer-aria-label" data-v-79bc013e>Pager</span><div class="pager" data-v-79bc013e><a class="VPLink link pager-link prev" href="/about.html" data-v-79bc013e><!--[--><span class="desc" data-v-79bc013e>Previous page</span><span class="title" data-v-79bc013e>About</span><!--]--></a></div><div class="pager" data-v-79bc013e><a class="VPLink link pager-link next" href="/markdown-examples.html" data-v-79bc013e><!--[--><span class="desc" data-v-79bc013e>Next page</span><span class="title" data-v-79bc013e>Markdown examples</span><!--]--></a></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"about.md\":\"B_gKCQO5\",\"api-examples.md\":\"BagwuWCj\",\"index.md\":\"WDPWSF_G\",\"markdown-examples.md\":\"gxMVL17j\",\"nav_index.md\":\"CAAQPs7T\",\"notes_vue3封装一个elementplus自定义上传组件2--无弹窗.md\":\"CA1ISPA4\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"Simple的小站\",\"description\":\"ProsperousEnding's Simple Co deSpace\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"logo\":\"/logo.svg\",\"outline\":{\"level\":[2,3],\"label\":\"目录\"},\"aside\":true,\"nav\":[{\"text\":\"Home\",\"link\":\"/\"},{\"text\":\"Examples\",\"link\":\"/markdown-examples\"},{\"text\":\"About\",\"link\":\"/about\"},{\"text\":\"cnblogs\",\"link\":\"https://www.cnblogs.com/ProsperousEnding\"}],\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/ProsperousEnding\"}],\"search\":{\"provider\":\"local\",\"options\":{\"translations\":{\"button\":{\"buttonText\":\"搜索文档\",\"buttonAriaLabel\":\"搜索文档\"},\"modal\":{\"noResultsText\":\"无法找到相关结果\",\"resetButtonTitle\":\"清除查询条件\",\"footer\":{\"selectText\":\"选择\",\"navigateText\":\"切换\"}}}}},\"sidebar\":[{\"text\":\"目录\",\"items\":[{\"text\":\"About\",\"link\":\"/about\"},{\"text\":\"Api examples\",\"link\":\"/api-examples\"},{\"text\":\"Markdown examples\",\"link\":\"/markdown-examples\"},{\"text\":\"Notes\",\"items\":[{\"text\":\"Vue3封装一个ElementPlus自定义上传组件2  无弹窗\",\"link\":\"/notes/Vue3封装一个ElementPlus自定义上传组件2--无弹窗\"}],\"collapsed\":false}]}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
