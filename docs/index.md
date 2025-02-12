@@ -26,5 +26,6 @@ features:
   - title: Gaming Aficionado
     details: RPG & strategy game lover
 --- 
+
 <Confetti />
 

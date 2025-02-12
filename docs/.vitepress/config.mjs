@@ -16,10 +16,17 @@ const vitePressOptions = {
         aside: true,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            {text: 'Home', link: '/'},
-            {text: 'Examples', link: '/markdown-examples'},
-            {text: 'About', link: '/about'},
-            {text: 'cnblogs', link: 'https://www.cnblogs.com/ProsperousEnding'},
+            { text: '首页', link: '/' },
+            { text: 'AI 助手', link: '/chat' },
+            { text: '文档', link: '/markdown-examples' },
+            { text: '关于', link: '/about' },
+            { 
+                text: '更多',
+                items: [
+                    { text: '我的博客', link: 'https://www.cnblogs.com/ProsperousEnding' },
+                    { text: 'GitHub', link: 'https://github.com/ProsperousEnding' }
+                ]
+            }
         ],
 
         socialLinks: [

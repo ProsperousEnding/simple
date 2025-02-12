@@ -8,3 +8,6 @@ cache
 *.local
 docs/.vitepress/cache
 .idea
+.env
+.env.local
+.env.*.local
